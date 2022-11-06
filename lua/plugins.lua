@@ -30,5 +30,9 @@ return require('packer').startup(function(use)
   -- Enable Copilot with `:Copilot enable`
   -- Help available through `:help copilot`
   use 'github/copilot.vim'
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v2',
+  }
 end)
 

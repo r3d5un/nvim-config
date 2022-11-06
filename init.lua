@@ -113,3 +113,6 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
+require'hop'.setup {
+  case_insensitive = true,
+}

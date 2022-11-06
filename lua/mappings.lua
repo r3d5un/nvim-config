@@ -68,3 +68,9 @@ key_mapper('n', '<leader>fh', ':lua require"telescope.builtin".help_tags()<CR>')
 -- Fuzzy find buffers
 key_mapper('n', '<leader>fb', ':lua require"telescope.builtin".buffers()<CR>')
 
+-- Configure Hop
+key_mapper('n', '<leader>h', ':HopWord<CR>')
+key_mapper('n', '<leader>H', ':HopWord<CR>')
+key_mapper('n', '<leader>t', ':HopLineStart<CR>')
+key_mapper('n', '<leader>T', ':HopLineStart<CR>')
+
