@@ -25,6 +25,10 @@ return require('packer').startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'nvim-lua/telescope.nvim'
   use 'jremmen/vim-ripgrep'
-  use 'navarasu/onedark.nvim' 
+  use 'navarasu/onedark.nvim'
+  -- Configure GitHub Copilot with `:Copilot setup`
+  -- Enable Copilot with `:Copilot enable`
+  -- Help available through `:help copilot`
+  use 'github/copilot.vim'
 end)
 
