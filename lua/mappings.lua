@@ -56,16 +56,10 @@ key_mapper('n', '<leader>af', ':lua vim.lsp.buf.code_action()<CR>')
 -- Rename all references to the symbol under the cursor
 key_mapper('n', '<leader>rn', ':lua vim.lsp.buf.rename()<CR>')
 
--- Fuzzy find files
-key_mapper('n', '<C-p>', ':lua require"telescope.builtin".find_files()<CR>')
-
--- Fuzzy find in files
-key_mapper('n', '<leader>fs', ':lua require"telescope.builtin".live_grep()<CR>')
-
--- Fuzzy find help pages
+-- Telescope/Fuzzy Finder
+key_mapper('n', '<leader>ff', ':lua require"telescope.builtin".find_files()<CR>')
+key_mapper('n', '<leader>fg', ':lua require"telescope.builtin".live_grep()<CR>')
 key_mapper('n', '<leader>fh', ':lua require"telescope.builtin".help_tags()<CR>')
-
--- Fuzzy find buffers
 key_mapper('n', '<leader>fb', ':lua require"telescope.builtin".buffers()<CR>')
 
 -- Configure Hop
