@@ -23,4 +23,5 @@ require'hop'.setup {
   case_insensitive = true,
 }
 require'luasnip.loaders.from_vscode'.load()
+require'lualine'.setup()
 

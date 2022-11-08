@@ -42,5 +42,9 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lua'
   use {"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"}
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)
 
