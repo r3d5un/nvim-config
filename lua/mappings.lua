@@ -68,3 +68,8 @@ key_mapper('n', '<leader>H', ':HopWord<CR>')
 key_mapper('n', '<leader>t', ':HopLineStart<CR>')
 key_mapper('n', '<leader>T', ':HopLineStart<CR>')
 
+-- Configure NvimTree
+key_mapper('n', '<leader>nt', ':NvimTreeToggle<CR>')
+key_mapper('n', '<leader>nr', ':NvimTreeRefresh<CR>')
+key_mapper('n', '<leader>nf', ':NvimTreeFindFile<CR>')
+
