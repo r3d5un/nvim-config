@@ -24,4 +24,5 @@ require'hop'.setup {
 }
 require'luasnip.loaders.from_vscode'.load()
 require'lualine'.setup()
+require'nvim-tree'.setup()
 
