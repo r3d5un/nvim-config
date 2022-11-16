@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
     branch = 'v2',
   }
   -- Autocompletion plugins
+  use 'm4xshen/autoclose.nvim'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
@@ -51,5 +52,7 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons',
     }
   }
+  -- Keymap legend
+  use 'mrjones2014/legendary.nvim'
 end)
 
