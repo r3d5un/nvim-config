@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use 'nvim-lua/telescope.nvim'
   use 'jremmen/vim-ripgrep'
   use 'navarasu/onedark.nvim'
+
   -- Configure GitHub Copilot with `:Copilot setup`
   -- Enable Copilot with `:Copilot enable`
   -- Help available through `:help copilot`
@@ -34,6 +35,7 @@ return require('packer').startup(function(use)
     'phaazon/hop.nvim',
     branch = 'v2',
   }
+
   -- Autocompletion plugins
   use 'm4xshen/autoclose.nvim'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -43,8 +45,10 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lua'
   use {"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"}
+
   -- Statusline plugins
   use 'nvim-lualine/lualine.nvim'
+
   -- File explorer Plugins
   use {
     'nvim-tree/nvim-tree.lua',
@@ -52,7 +56,13 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons',
     }
   }
-  -- Keymap legend
-  use 'mrjones2014/legendary.nvim'
+
+  -- Git
+  use {
+    'tanvirtin/vgit.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
 end)
 
