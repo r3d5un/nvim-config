@@ -22,6 +22,8 @@ key_mapper('v', 'jk', '<ESC>')
 key_mapper('v', 'JK', '<ESC>')
 key_mapper('v', 'jK', '<ESC>')
 
+key_mapper('i', '<M-BS>', '<C-W>')
+
 -- Jumps to the definition of the symbol under the cursor
 key_mapper('n', 'gd', ':lua vim.lsp.buf.definition()<CR>')
 
