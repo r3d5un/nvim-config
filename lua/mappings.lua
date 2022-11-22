@@ -35,16 +35,16 @@ key_mapper('n', 'gD', ':lua vim.lsp.buf.declaration()<CR>')
 key_mapper('n', 'gi', ':lua vim.lsp.buf.implementation()<CR>')
 
 -- List all symbols in the current buffer in the quickfix window
-key_mapper('n', 'gw', ':lua vim.lsp.buf.document_symbol()<CR>')
+key_mapper('n', '<leader>gw', ':lua vim.lsp.buf.document_symbol()<CR>')
 
 -- List all symbols in the current workspace in the quickfix window
-key_mapper('n', 'gW', ':lua vim.lsp.buf.workspace_symbol()<CR>')
+key_mapper('n', '<leader>gw', ':lua vim.lsp.buf.workspace_symbol()<CR>')
 
 -- List all references to the symbol under the cursor in the quickfix window
-key_mapper('n', 'gr', ':lua vim.lsp.buf.references()<CR>')
+key_mapper('n', '<leader>gr', ':lua vim.lsp.buf.references()<CR>')
 
 -- Jump to the definition of the type of the symbol under the cursor
-key_mapper('n', 'gt', ':lua vim.lsp.type_definition()<CR>')
+key_mapper('n', '<leader>gt', ':lua vim.lsp.type_definition()<CR>')
 
 -- Display the hover context
 key_mapper('n', 'K', ':lua vim.lsp.buf.hover()<CR>')
@@ -74,4 +74,16 @@ key_mapper('n', '<leader>T', ':HopLineStart<CR>')
 key_mapper('n', '<leader>nt', ':NvimTreeToggle<CR>')
 key_mapper('n', '<leader>nr', ':NvimTreeRefresh<CR>')
 key_mapper('n', '<leader>nf', ':NvimTreeFindFile<CR>')
+
+-- Tabs
+key_mapper('n', '<leader>tt', ':tabnext<CR>')
+key_mapper('n', '<leader>tT', ':tabprevious<CR>')
+key_mapper('n', '<leader>tn', ':tabnew<CR>')
+key_mapper('n', '<leader>tx', ':tabclose<CR>')
+
+-- Panes
+key_mapper('n', '<C-h>', '<C-W>h')
+key_mapper('n', '<C-j>', '<C-W>j')
+key_mapper('n', '<C-k>', '<C-W>k')
+key_mapper('n', '<C-l>', '<C-W>l')
 
